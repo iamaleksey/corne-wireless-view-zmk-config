@@ -8,10 +8,10 @@ parse_config:
   raw_binding_map:
     "&mt LS(LA(LC(LCMD))) D":
       tap: D
-      hold: "Hyper"
+      hold: $$mdi:triangle$$ # Hyper
     "&mt LS(LA(LC(LCMD))) H":
       tap: H
-      hold: "Hyper"
+      hold: $$mdi:triangle$$ # Hyper
     "&caps_word": $$mdi:alpha-w-box$$
     "&none":
       tap: ""
@@ -83,14 +83,14 @@ parse_config:
       tap: $$mdi:backspace$$
 
     # Modifiers
-    LALT: Opt
-    RALT: Opt
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LCMD: Cmd
-    RCMD: Cmd
-    LSHFT: Shift
-    RSHFT: Shift
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
 
     # Media
     C_NEXT: $$mdi:skip-next$$
