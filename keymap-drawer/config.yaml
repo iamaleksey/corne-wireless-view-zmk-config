@@ -1,7 +1,14 @@
 parse_config:
+  mark_alternate_layer_activators: true
+
   raw_binding_map:
     "&caps_word": Caps Word
-    "LS(LA(LC(LCMD)))": Hyper
+    "LS(LA(LC(LCMD))) D":
+      tap: D
+      shifted: "Hyper"
+    "LS(LA(LC(LCMD))) H":
+      tap: H
+      shifted: "Hyper"
 
   zmk_keycode_map:
     # Symbols
