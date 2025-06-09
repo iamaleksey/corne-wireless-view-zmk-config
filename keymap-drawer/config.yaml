@@ -5,10 +5,10 @@ parse_config:
     "&caps_word": Caps Word
     "&mt LS(LA(LC(LCMD))) D":
       tap: D
-      shifted: "Hyper"
+      hold: "Hyper"
     "&mt LS(LA(LC(LCMD))) H":
       tap: H
-      shifted: "Hyper"
+      hold: "Hyper"
 
   zmk_keycode_map:
     # Symbols
