@@ -1,5 +1,9 @@
 parse_config:
   mark_alternate_layer_activators: true
+  sticky_label: $$mdi:gesture-tap-hold$$
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
 
   raw_binding_map:
     "&caps_word": Caps Word
@@ -9,6 +13,10 @@ parse_config:
     "&mt LS(LA(LC(LCMD))) H":
       tap: H
       hold: "Hyper"
+    # Empty
+    "&none":
+      tap: $$mdi:minus-circle-outline$$
+      type: none
 
   zmk_keycode_map:
     # Symbols
