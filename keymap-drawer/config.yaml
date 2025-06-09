@@ -46,12 +46,8 @@ parse_config:
       shifted: "?"
 
     # Navigation
-    UP: $$mdi:arrow-up-bold$$
-    DOWN: $$mdi:arrow-down-bold$$
-    LEFT: $$mdi:arrow-left-bold$$
-    RIGHT: $$mdi:arrow-right-bold$$
-    PG_UP: $$mdi:transfer-up$$
-    PG_DN: $$mdi:transfer-down$$
+    PG_UP: PgUp
+    PG_DN: PgDn
 
     # Modifiers
     LALT: Opt
