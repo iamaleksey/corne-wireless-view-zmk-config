@@ -4,6 +4,9 @@
 
 #define HYPER LS(LA(LC(LCMD)))
 
+#define XXX &none
+#define ___ &trans
+
 &mt {
     flavor = "balanced";
 };
@@ -15,40 +18,40 @@
         base_layer {
             display-name = "base";
             bindings = <
-    &none     &kp Q       &kp W      &kp F      &kp P       &kp B        &kp J     &kp L       &kp U      &kp Y      &kp SEMI    &kp BSLH
-    &kp ESC   &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHFT T &kp G        &kp M     &mt RSHFT N &mt RCMD E &mt RALT I &mt RCTRL O &kp SQT
-    &none     &kp Z       &kp X      &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
-                                     &none      &lt 1 TAB   &kp SPACE    &kp BSPC  &lt 2 RET   &none
+    XXX       &kp Q        &kp W        &kp F      &kp P       &kp B        &kp J     &kp L        &kp U      &kp Y         &kp SEMI    &kp BSLH
+    &kp ESC   &mt LCTRL A  &mt LALT R   &mt LCMD S &mt LSHFT T &kp G        &kp M     &mt RSHFT N  &mt RCMD E &mt RALT I    &mt RCTRL O &kp SQT
+    XXX       &kp Z        &kp X        &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H  &kp COMMA  &kp DOT       &kp FSLH    &caps_word
+                                        XXX        &lt 1 TAB   &kp SPACE    &kp BSPC  &lt 2 RET    XXX
             >;
         };
 
         symbols_layer {
             display-name = "symbols";
             bindings = <
-    &trans    &kp N1      &kp N2     &kp N3     &kp N4      &kp N5       &kp N6    &kp N7      &kp N8     &kp N9     &kp N0      &trans
-    &kp TILDE &kp EXCL    &kp PLUS   &kp LPAR   &kp RPAR    &kp AMPS     &kp PIPE  &kp MINUS   &kp EQUAL  &kp UNDER  &kp STAR    &trans
-    &trans    &kp DLLR    &kp AT     &kp LBKT   &kp RBKT    &kp HASH     &kp GRAVE &kp LBRC    &kp RBRC   &kp PRCNT  &kp CARET   &trans
-                                     &trans     &trans      &trans       &trans    &trans      &trans
+    ___       &kp N1       &kp N2       &kp N3     &kp N4      &kp N5       &kp N6    &kp N7       &kp N8     &kp N9        &kp N0      ___
+    &kp TILDE &kp EXCL     &kp PLUS     &kp LPAR   &kp RPAR    &kp AMPS     &kp PIPE  &kp MINUS    &kp EQUAL  &kp UNDER     &kp STAR    ___
+    ___       &kp DLLR     &kp AT       &kp LBKT   &kp RBKT    &kp HASH     &kp GRAVE &kp LBRC     &kp RBRC   &kp PRCNT     &kp CARET   ___
+                                        ___        ___         ___          ___       ___          ___
             >;
         };
 
         extend_layer {
             display-name = "extend";
             bindings = <
-    &trans    &trans     &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans       &kp PG_UP &kp LA(LEFT) &kp UP     &kp LA(RIGHT) &trans      &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT     &trans      &trans
-    &trans    &trans     &trans      &trans     &trans      &trans       &trans    &trans       &trans     &trans        &trans      &trans
-                                     &trans     &trans      &trans       &trans    &trans       &trans
+    ___       ___          &kp C_PREV   &kp C_PP   &kp C_NEXT  ___          &kp PG_UP &kp LA(LEFT) &kp UP     &kp LA(RIGHT) ___         ___
+    ___       ___          ___          ___        ___         ___          &kp PG_DN &kp LEFT     &kp DOWN   &kp RIGHT     ___         ___
+    ___       ___          ___          ___        ___         ___          ___       ___          ___        ___           ___         ___
+                                        ___        ___         ___          ___       ___          ___
             >;
         };
 
         adjust_layer {
             display-name = "adjust";
             bindings = <
-    &trans    &kp F1       &kp F2       &kp F3     &kp F4      &kp F5       &kp F6    &kp F7      &kp F8     &kp F9     &kp F10     &trans
-    &trans    &bt BT_SEL 0 &bt BT_SEL 1 &trans     &trans      &trans       &trans    &trans      &trans     &trans     &kp F11     &trans
-    &trans    &trans       &trans       &trans     &trans      &trans       &trans    &trans      &trans     &trans     &kp F12     &trans
-                                        &trans     &trans      &trans       &trans    &trans      &trans
+    ___       &kp F1       &kp F2       &kp F3     &kp F4      &kp F5       &kp F6    &kp F7       &kp F8     &kp F9        &kp F10     ___
+    ___       &bt BT_SEL 0 &bt BT_SEL 1 ___        ___         ___          ___       ___          ___        ___           &kp F11     ___
+    ___       ___          ___          ___        ___         ___          ___       ___          ___        ___           &kp F12     ___
+                                        ___        ___         ___          ___       ___          ___
             >;
         };
 
