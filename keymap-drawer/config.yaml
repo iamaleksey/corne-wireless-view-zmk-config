@@ -6,6 +6,9 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    "&none":
+      tap: ""
+      type: none
     "&mt LS(LA(LC(LCMD))) D":
       tap: D
       hold: $$mdi:triangle$$ # Hyper
@@ -13,13 +16,6 @@ parse_config:
       tap: H
       hold: $$mdi:triangle$$ # Hyper
     "&caps_word": $$mdi:alpha-w-box$$
-    "&none":
-      tap: ""
-      type: none
-    "&kp LA(LEFT)":
-      tap: "Prev Word"
-    "&kp LA(RIGHT)":
-      tap: "Next Word"
 
   zmk_keycode_map:
     # Symbols
@@ -70,6 +66,8 @@ parse_config:
     RIGHT: $$mdi:arrow-right-bold$$
     PG_UP: $$mdi:transfer-up$$
     PG_DN: $$mdi:transfer-down$$
+    HOME: $$mdi:transfer-left$$
+    END: $$mdi:transfer-right$$
 
     # Whitespace
     RET:
