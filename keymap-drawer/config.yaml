@@ -18,8 +18,9 @@ parse_config:
     LPAR: (
     RPAR: )
     MINUS: "-"
-    EQUAL: "="
     UNDER: _
+    EQUAL: "="
+    PLUS: "+"
     LBKT: "["
     LBRC: "{"
     RBKT: "]"
@@ -43,6 +44,14 @@ parse_config:
     FSLH:
       tap: "/"
       shifted: "?"
+
+    # Navigation
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: $$mdi:transfer-up$$
+    PG_DN: $$mdi:transfer-down$$
 
     # Modifiers
     LALT: Opt
