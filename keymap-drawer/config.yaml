@@ -3,10 +3,10 @@ parse_config:
 
   raw_binding_map:
     "&caps_word": Caps Word
-    "LS(LA(LC(LCMD))) D":
+    "&mt LS(LA(LC(LCMD))) D":
       tap: D
       shifted: "Hyper"
-    "LS(LA(LC(LCMD))) H":
+    "&mt LS(LA(LC(LCMD))) H":
       tap: H
       shifted: "Hyper"
 
