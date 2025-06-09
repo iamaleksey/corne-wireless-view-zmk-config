@@ -14,9 +14,9 @@ parse_config:
     RSHFT: Shift
     FSLH:
       tap: "/"
-      shifted: "?
+      shifted: "?"
     BSLH:
-      tap: "\"
+      tap: '\'
       shifted: "|"
 
 draw_config:
