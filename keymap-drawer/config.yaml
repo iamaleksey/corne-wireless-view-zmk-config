@@ -66,5 +66,10 @@ parse_config:
     LSHFT: Shift
     RSHFT: Shift
 
+    # Media
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+
 draw_config:
   append_colon_to_layer_header: false
