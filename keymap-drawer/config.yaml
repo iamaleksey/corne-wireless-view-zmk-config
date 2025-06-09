@@ -53,8 +53,23 @@ parse_config:
       shifted: "?"
 
     # Navigation
-    PG_UP: PgUp
-    PG_DN: PgDn
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    PG_UP: $$mdi:transfer-up$$
+    PG_DN: $$mdi:transfer-down$$
+
+    # Whitespace
+    RET:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
 
     # Modifiers
     LALT: Opt
@@ -70,6 +85,9 @@ parse_config:
     C_NEXT: $$mdi:skip-next$$
     C_PREV: $$mdi:skip-previous$$
     C_PP: $$mdi:play-pause$$
+
+    # Bluetooth
+    BT_SEL: $$mdi:bluetooth-connect$$
 
 draw_config:
   append_colon_to_layer_header: false
