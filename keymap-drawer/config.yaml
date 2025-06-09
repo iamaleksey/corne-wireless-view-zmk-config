@@ -1,9 +1,50 @@
 parse_config:
   raw_binding_map:
     "&caps_word": Caps Word
+    "LS(LA(LC(LCMD)))": Hyper
 
   zmk_keycode_map:
-    # custom mappings
+    # Symbols
+    GRAVE: "`"
+    TILDE: "~"
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: $
+    PRCNT: "%"
+    CARET: ^
+    AMPS: "&"
+    STAR: "*"
+    LPAR: (
+    RPAR: )
+    MINUS: "-"
+    EQUAL: "="
+    UNDER: _
+    LBKT: "["
+    LBRC: "{"
+    RBKT: "]"
+    RBRC: "}"
+    BSLH:
+      tap: '\'
+      shifted: "|"
+    PIPE: "|"
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    SQT:
+      tap: "'"
+      shifted: '"'
+    COMMA:
+      tap: ","
+      shifted: "<"
+    DOT:
+      tap: "."
+      shifted: ">"
+    FSLH:
+      tap: "/"
+      shifted: "?"
+
+    # Modifiers
     LALT: Opt
     RALT: Opt
     LCTRL: Ctrl
@@ -12,12 +53,6 @@ parse_config:
     RCMD: Cmd
     LSHFT: Shift
     RSHFT: Shift
-    FSLH:
-      tap: "/"
-      shifted: "?"
-    BSLH:
-      tap: '\'
-      shifted: "|"
 
 draw_config:
   append_colon_to_layer_header: false
