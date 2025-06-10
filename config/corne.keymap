@@ -20,7 +20,7 @@
             bindings = <
     XXX       &kp Q        &kp W        &kp F      &kp P       &kp B        &kp J     &kp L       &kp U      &kp Y      &kp SEMI    &kp BSLH
     &lt 2 ESC &mt LCTRL A  &mt LALT R   &mt LCMD S &mt LSHFT T &kp G        &kp M     &mt RSHFT N &mt RCMD E &mt RALT I &mt RCTRL O &lt 1 SQT
-    XXX       &kp Z        &kp X        &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
+    &mo 4     &kp Z        &kp X        &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
                                         XXX        &lt 1 TAB   &kp SPACE    &kp BSPC  &lt 2 RET   XXX
             >;
         };
@@ -48,10 +48,20 @@
         adjust_layer {
             display-name = "adjust";
             bindings = <
-    ___       &kp F1       &kp F2       &kp F3     &kp F4      &kp F5       &kp F6    &kp F7      &kp F8     &kp F9     &kp F10     ___
-    ___       &bt BT_SEL 0 &bt BT_SEL 1 ___        ___         ___          ___       ___         ___        ___        &kp F11     ___
-    ___       ___          ___          ___        ___         ___          ___       ___         ___        ___        &kp F12     ___
+    ___       ___          ___          ___        ___         ___          ___       ___         ___        ___        ___         ___
+    ___       ___          ___          ___        ___         ___          ___       ___         ___        ___        ___         ___
+    ___       ___          ___          ___        ___         ___          ___       ___         ___        ___        ___         ___
                                         ___        ___         ___          ___       ___         ___
+            >;
+        };
+
+        fn_layer {
+            display-name = "fn";
+            bindings = <
+    ___       ___          ___          ___          ___         ___          ___       ___         &kp F7     &kp F8     &kp F9      &kp F12
+    ___       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 ___         ___          ___       ___         &kp F4     &kp F5     &kp F6      &kp F11
+    ___       ___          ___          ___          ___         ___          ___       ___         &kp F1     &kp F2     &kp F3      &kp F10
+                                        ___          ___         ___          ___       ___         ___
             >;
         };
     };
