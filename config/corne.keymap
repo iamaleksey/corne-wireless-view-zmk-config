@@ -28,9 +28,9 @@
         sym_layer {
             display-name = "sym";
             bindings = <
-    ___       &kp N1       &kp N2       &kp N3     &kp N4      &kp N5       &kp N6    &kp N7      &kp N8     &kp N9     &kp N0      ___
-    &kp TILDE &kp EXCL     &kp PLUS     &kp LPAR   &kp RPAR    &kp AMPS     &kp PIPE  &kp MINUS   &kp EQUAL  &kp UNDER  &kp STAR    ___
-    ___       &kp DLLR     &kp AT       &kp LBKT   &kp RBKT    &kp HASH     &kp GRAVE &kp LBRC    &kp RBRC   &kp PRCNT  &kp CARET   ___
+    ___       &kp GRAVE    &kp TILDE    &kp AMPS   &kp HASH    ___          ___       &kp PIPE    ___        ___        ___         ___
+    ___       &kp EXCL     &kp PLUS     &kp LPAR   &kp RPAR    ___          ___       &kp MINUS   &kp EQUAL  &kp UNDER  &kp STAR    ___
+    ___       &kp DLLR     &kp AT       &kp LBKT   &kp RBKT    ___          ___       &kp LBRC    &kp RBRC   &kp PRCNT  &kp CARET   ___
                                         ___        ___         ___          ___       ___         ___
             >;
         };
@@ -68,10 +68,10 @@
         fn_layer {
             display-name = "fn";
             bindings = <
-    ___       ___          ___          ___          ___         ___        ___       &kp F7      &kp F8     &kp F9     &kp F12     ___
-    ___       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 ___         ___        ___       &kp F4      &kp F5     &kp F6     &kp F11     ___
-    ___       ___          ___          ___          ___         ___        ___       &kp F1      &kp F2     &kp F3     &kp F10     ___
-                                        ___          ___         ___        ___       ___         ___
+    ___        ___          ___          ___          ___         ___        ___       &kp F7      &kp F8     &kp F9     &kp F12     ___
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 ___         ___        ___       &kp F4      &kp F5     &kp F6     &kp F11     ___
+    ___        ___          ___          ___          ___         ___        ___       &kp F1      &kp F2     &kp F3     &kp F10     ___
+                                         ___          ___         ___        ___       ___         ___
             >;
         };
     };
