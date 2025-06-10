@@ -29,8 +29,8 @@
             display-name = "sym";
             bindings = <
     ___       &kp TILDE    &kp AMPS     &kp PIPE   &kp CARET   ___          ___       &kp GRAVE   ___        ___        ___         ___
-    ___       &kp MINUS    &kp PLUS     &kp LBKT   &kp LPAR    ___          ___       &kp RPAR    &kp RBKT   &kp UNDER  &kp STAR    ___
-    ___       &kp DLLR     &kp AT       &kp EQUAL  &kp EXCL    ___          ___       &kp LBRC    &kp RBRC   &kp PRCNT  &kp HASH    ___
+    ___       &kp MINUS    &kp PLUS     &kp LBRC   &kp LPAR    ___          ___       &kp RPAR    &kp RBRC   &kp UNDER  &kp STAR    ___
+    ___       &kp DLLR     &kp AT       &kp EQUAL  &kp EXCL    ___          ___       &kp LBKT    &kp RBKT   &kp PRCNT  &kp HASH    ___
                                         ___        ___         ___          ___       ___         ___
             >;
         };
