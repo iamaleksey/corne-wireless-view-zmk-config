@@ -28,9 +28,9 @@
         sym_layer {
             display-name = "sym";
             bindings = <
-    ___       &kp GRAVE    &kp TILDE    &kp AMPS   &kp HASH    ___          ___       &kp PIPE    ___        ___        ___         ___
+    ___       &kp TILDE    &kp AMPS     &kp PIPE   &kp CARET   ___          ___       &kp GRAVE   ___        ___        ___         ___
     ___       &kp EXCL     &kp PLUS     &kp LPAR   &kp RPAR    ___          ___       &kp MINUS   &kp EQUAL  &kp UNDER  &kp STAR    ___
-    ___       &kp DLLR     &kp AT       &kp LBKT   &kp RBKT    ___          ___       &kp LBRC    &kp RBRC   &kp PRCNT  &kp CARET   ___
+    ___       &kp DLLR     &kp AT       &kp LBKT   &kp RBKT    ___          ___       &kp LBRC    &kp RBRC   &kp PRCNT  &kp HASH    ___
                                         ___        ___         ___          ___       ___         ___
             >;
         };
