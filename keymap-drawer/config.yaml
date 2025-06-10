@@ -11,10 +11,10 @@ parse_config:
       type: none
     "&mt LS(LA(LC(LCMD))) D":
       tap: D
-      hold: $$mdi:triangle$$ # Hyper
+      hold: "✦" # Hyper
     "&mt LS(LA(LC(LCMD))) H":
       tap: H
-      hold: $$mdi:triangle$$ # Hyper
+      hold: "✦" # Hyper
     "&caps_word": $$mdi:alpha-w-box$$
 
   zmk_keycode_map:
