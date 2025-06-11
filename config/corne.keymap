@@ -5,9 +5,9 @@
 #define xxx &none
 #define ___ &trans
 
-#define NUM   1
-#define SYM   2
-#define NAV   3
+#define SYM   1
+#define NAV   2
+#define NUM   3
 #define MEDIA 4
 
 #define HYPER LS(LA(LC(LCMD)))
@@ -35,16 +35,6 @@
             >;
         };
 
-        num_layer {
-            display-name = "num";
-            bindings = <
-    xxx     &kp F1      &kp F2       &kp F3     &kp F4       xxx            xxx          &kp N7        &kp N8     &kp N9     xxx         xxx
-    xxx     &kp F5      &kp F6       &kp F7     &kp F8       xxx            xxx          &kp N4        &kp N5     &kp N6     xxx         xxx
-    xxx     &kp F9      &kp F10      &kp F11    &kp F12      xxx            xxx          &kp N1        &kp N2     &kp N3     xxx         xxx
-                                     xxx        ___          ___            &kp BSPC     &kp N0        xxx
-            >;
-        };
-
         sym_layer {
             display-name = "sym";
             bindings = <
@@ -62,6 +52,16 @@
     xxx     &kp LCTRL   &kp LALT     &kp LCMD   &kp LSHFT    ___            &kp PG_DN    &kp LEFT      &kp DOWN   &kp RIGHT  ___         xxx
     xxx     ___         ___          ___        ___          ___            ___          ___           ___        ___        ___         xxx
                                      xxx        ___          ___            ___          ___           xxx
+            >;
+        };
+
+        num_layer {
+            display-name = "num";
+            bindings = <
+    xxx     &kp F1      &kp F2       &kp F3     &kp F4       xxx            xxx          &kp N7        &kp N8     &kp N9     xxx         xxx
+    xxx     &kp F5      &kp F6       &kp F7     &kp F8       xxx            xxx          &kp N4        &kp N5     &kp N6     xxx         xxx
+    xxx     &kp F9      &kp F10      &kp F11    &kp F12      xxx            xxx          &kp N1        &kp N2     &kp N3     xxx         xxx
+                                     xxx        ___          ___            &kp BSPC     &kp N0        xxx
             >;
         };
 
