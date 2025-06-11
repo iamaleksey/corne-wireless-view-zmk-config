@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   base:
-  - ''
+  - {type: none}
   - Q
   - W
   - F
@@ -13,162 +13,248 @@ layers:
   - Y
   - ;
   - \
-  - ESC
-  - {t: A, h: LCTRL}
-  - {t: R, h: LALT}
-  - {t: S, h: LCMD}
-  - {t: T, h: LSHFT}
+  - {t: '$$mdi:keyboard-esc$$', h: nav}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCMD}
-  - {t: I, h: RALT}
-  - {t: O, h: RCTRL}
-  - ''''
-  - ''
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '''', h: sym}
+  - fn
   - Z
   - X
   - C
-  - {t: D, h: Meh+LCMD}
+  - {t: D, h: ✦}
   - V
   - K
-  - {t: H, h: Meh+LCMD}
+  - {t: H, h: ✦}
   - ','
   - .
   - /
-  - '&caps_word'
-  - ''
-  - {t: TAB, h: symbols}
-  - SPACE
-  - BSPC
-  - {t: RET, h: extend}
-  - ''
-  symbols:
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - $$mdi:alpha-w-box$$
+  - {type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: sym}
+  - {t: '$$mdi:keyboard-space$$', h: num}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {type: none}
+  sym:
+  - {type: trans}
+  - '~'
+  - ^
+  - '&'
+  - '|'
+  - {type: trans}
+  - {type: trans}
+  - '#'
+  - {type: trans}
+  - {type: trans}
+  - $
+  - {type: trans}
+  - {type: trans}
+  - _
+  - '['
+  - '{'
+  - (
+  - {type: trans}
+  - {type: trans}
+  - )
+  - '}'
+  - ']'
+  - '*'
+  - {type: held}
+  - {type: trans}
+  - '%'
+  - '@'
+  - +
+  - '-'
+  - {type: trans}
+  - {type: trans}
+  - '='
+  - '!'
+  - {type: trans}
+  - '`'
+  - {type: trans}
+  - {type: trans}
+  - {type: held alternate}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  nav:
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - {type: trans}
+  - $$mdi:transfer-up$$
+  - $$mdi:transfer-left$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:transfer-right$$
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - {type: trans}
+  - $$mdi:transfer-down$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held alternate}
+  - {type: trans}
+  adjust:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  num:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - '7'
   - '8'
   - '9'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - '~'
-  - '!'
-  - +
-  - (
-  - )
-  - '&'
-  - '|'
-  - '-'
-  - '='
-  - _
-  - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $
-  - '@'
-  - '['
-  - ']'
-  - '#'
-  - '`'
-  - '{'
-  - '}'
-  - '%'
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  extend:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PREV
-  - PP
-  - NEXT
-  - {t: ▽, type: trans}
-  - PG UP
-  - Alt+LEFT
-  - UP
-  - Alt+RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  adjust:
-  - {t: ▽, type: trans}
+  - {type: trans}
+  fn:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - F1
   - F2
   - F3
   - F4
+  - {type: trans}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - F5
   - F6
   - F7
   - F8
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - F9
   - F10
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
