@@ -25,8 +25,8 @@
             bindings = <
     xxx       &kp Q       &kp W      &kp F      &kp P       &kp B        &kp J     &kp L       &kp U      &kp Y      &kp SEMI    &kp BSLH
     &lt 2 ESC &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHFT T &kp G        &kp M     &mt RSHFT N &mt RCMD E &mt RALT I &mt RCTRL O &lt 1 SQT
-    &mo 5     &kp Z       &kp X      &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
-                                     xxx        &lt 1 TAB   &lt 4 SPACE  &kp BSPC  &lt 2 RET   xxx
+    xxx       &kp Z       &kp X      &kp C      &mt HYPER D &kp V        &kp K     &mt HYPER H &kp COMMA  &kp DOT    &kp FSLH    &caps_word
+                                     xxx        &lt 1 TAB   &lt 3 SPACE  &kp BSPC  &lt 2 RET   xxx
             >;
         };
 
@@ -43,18 +43,8 @@
         nav_layer {
             display-name = "nav";
             bindings = <
-    ___       ___        &kp C_PREV  &kp C_PP   &kp C_NEXT  ___          &kp PG_UP &kp HOME    &kp UP     &kp END    ___         ___
+    ___       ___        ___         ___        ___         ___          &kp PG_UP &kp HOME    &kp UP     &kp END    ___         ___
     ___       &kp LCTRL  &kp LALT    &kp LCMD   &kp LSHFT   ___          &kp PG_DN &kp LEFT    &kp DOWN   &kp RIGHT  ___         ___
-    ___       ___        ___         ___        ___         ___          ___       ___         ___        ___        ___         ___
-                                     ___        ___         ___          ___       ___         ___
-            >;
-        };
-
-        adjust_layer {
-            display-name = "adjust";
-            bindings = <
-    ___       ___        ___         ___        ___         ___          ___       ___         ___        ___        ___         ___
-    ___       ___        ___         ___        ___         ___          ___       ___         ___        ___        ___         ___
     ___       ___        ___         ___        ___         ___          ___       ___         ___        ___        ___         ___
                                      ___        ___         ___          ___       ___         ___
             >;
@@ -63,19 +53,19 @@
         num_layer {
             display-name = "num";
             bindings = <
-    ___       ___        ___         ___        ___         ___          ___       &kp N7      &kp N8     &kp N9     ___         ___
-    ___       ___        ___         ___        ___         ___          ___       &kp N4      &kp N5     &kp N6     ___         ___
-    ___       ___        ___         ___        ___         ___          ___       &kp N1      &kp N2     &kp N3     ___         ___
+    ___       &kp F1      &kp F2     &kp F3     &kp F4      ___          ___       &kp N7      &kp N8     &kp N9     ___         ___
+    ___       &kp F5      &kp F6     &kp F7     &kp F8      ___          ___       &kp N4      &kp N5     &kp N6     ___         ___
+    ___       &kp F9      &kp F10    &kp F11    &kp F12     ___          ___       &kp N1      &kp N2     &kp N3     ___         ___
                                      ___        ___         ___          ___       &kp N0      ___
             >;
         };
 
-        fn_layer {
-            display-name = "fn";
+        media_layer {
+            display-name = "media";
             bindings = <
-    ___       ___        ___         ___        ___         ___          ___       &kp F1      &kp F2     &kp F3     &kp F4      ___
-    BT_CLEAR  BT_SEL_0   BT_SEL_1    BT_SEL_2   ___         ___          ___       &kp F5      &kp F6     &kp F7     &kp F8      ___
-    ___       ___        ___         ___        ___         ___          ___       &kp F9      &kp F10    &kp F11    &kp F12     ___
+    ___       ___        ___         ___        ___         ___          ___       ___         ___        ___        ___         ___
+    ___       ___        &kp C_PREV  &kp C_PP   &kp C_NEXT  ___          ___       ___         ___        ___        ___         ___
+    ___       BT_CLEAR   BT_SEL_0    BT_SEL_1   BT_SEL_2    ___          ___       ___         ___        ___        ___         ___
                                      ___        ___         ___          ___       ___         ___
             >;
         };
@@ -85,7 +75,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 };
