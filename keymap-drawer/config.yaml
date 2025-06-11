@@ -9,13 +9,29 @@ parse_config:
     "&none":
       tap: ""
       type: none
+
     "&mt LS(LA(LC(LCMD))) D":
       tap: D
       hold: "✦" # Hyper
     "&mt LS(LA(LC(LCMD))) H":
       tap: H
       hold: "✦" # Hyper
+
     "&caps_word": $$mdi:alpha-w-box$$
+
+    # Bluetooth
+    "&bt BT_SEL 0":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 1
+    "&bt BT_SEL 1":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 2
+    "&bt BT_SEL 2":
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
+      hold: 3
 
   zmk_keycode_map:
     # Symbols
@@ -39,25 +55,13 @@ parse_config:
     LBRC: "{"
     RBKT: "]"
     RBRC: "}"
-    BSLH:
-      tap: '\'
-      shifted: "|"
+    BSLH: '\'
     PIPE: "|"
-    SEMI:
-      tap: ";"
-      shifted: ":"
-    SQT:
-      tap: "'"
-      shifted: '"'
-    COMMA:
-      tap: ","
-      shifted: "<"
-    DOT:
-      tap: "."
-      shifted: ">"
-    FSLH:
-      tap: "/"
-      shifted: "?"
+    SEMI: ";"
+    SQT: "'"
+    COMMA: ","
+    DOT: "."
+    FSLH: "/"
 
     # Navigation
     UP: $$mdi:arrow-up-bold$$
