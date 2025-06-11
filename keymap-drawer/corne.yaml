@@ -13,7 +13,7 @@ layers:
   - Y
   - ;
   - \
-  - {t: '$$mdi:keyboard-esc$$', h: nav}
+  - $$mdi:keyboard-esc$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
@@ -24,8 +24,8 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '''', h: sym}
-  - fn
+  - ''''
+  - {type: none}
   - Z
   - X
   - C
@@ -38,68 +38,68 @@ layers:
   - /
   - $$mdi:alpha-w-box$$
   - {type: none}
-  - {t: '$$mdi:keyboard-tab$$', h: sym}
-  - {t: '$$mdi:keyboard-space$$', h: num}
+  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: nav}
   - {type: none}
   sym:
-  - {type: trans}
+  - {type: none}
   - '~'
   - ^
   - '&'
   - '|'
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - '#'
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
   - $
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - _
   - '['
   - '{'
   - (
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - )
   - '}'
   - ']'
   - '*'
-  - {type: held}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - '%'
   - '@'
   - +
   - '-'
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - '='
   - '!'
-  - {type: trans}
+  - {type: none}
   - '`'
+  - {type: none}
+  - {type: none}
   - {type: trans}
+  - {type: held}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {type: trans}
-  - {type: held alternate}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
   nav:
+  - {type: none}
   - {type: trans}
   - {type: trans}
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - $$mdi:transfer-up$$
   - $$mdi:transfer-left$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:transfer-right$$
   - {type: trans}
-  - {type: trans}
-  - {type: held}
+  - {type: none}
+  - {type: none}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -110,6 +110,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -120,114 +122,82 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: held alternate}
-  - {type: trans}
-  adjust:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: held}
-  - {type: trans}
-  - {type: trans}
-  - {type: held}
-  - {type: trans}
+  - {type: none}
   num:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - F1
+  - F2
+  - F3
+  - F4
   - {type: trans}
   - {type: trans}
   - '7'
   - '8'
   - '9'
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - F5
+  - F6
+  - F7
+  - F8
   - {type: trans}
   - {type: trans}
   - '4'
   - '5'
   - '6'
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
+  - F9
+  - F10
+  - F11
+  - F12
   - {type: trans}
   - {type: trans}
   - '1'
   - '2'
   - '3'
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: held}
   - {type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '0'
+  - {type: none}
+  media:
+  - {type: none}
   - {type: trans}
-  fn:
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: none}
+  - {type: none}
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -235,26 +205,13 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
   - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: none}
+  - {type: none}
   - {type: held}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {type: held}
+  - {type: none}
