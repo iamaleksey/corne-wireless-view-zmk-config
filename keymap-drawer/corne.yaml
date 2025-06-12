@@ -131,10 +131,10 @@ layers:
   - {type: none}
   num:
   - {type: none}
-  - F1
-  - F2
-  - F3
-  - F4
+  - F9
+  - F10
+  - F11
+  - F12
   - {type: none}
   - {type: none}
   - '7'
@@ -155,10 +155,10 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - F9
-  - F10
-  - F11
-  - F12
+  - F1
+  - F2
+  - F3
+  - F4
   - {type: none}
   - {type: none}
   - '1'
