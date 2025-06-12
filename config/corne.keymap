@@ -36,51 +36,59 @@
         base_layer {
             display-name = "base";
             bindings = <
-    ___      &kp Q        &kp W        &kp F       &kp P        &kp B          &kp J       &kp L          &kp U       &kp Y       &kp SEMI     &kp BSLH
-    &kp ESC  &hml LCTRL A &hml LALT R  &hml LCMD S &hml LSHFT T &kp G          &kp M       &hmr RSHFT N   &hmr RCMD E &hmr RALT I &hmr RCTRL O &kp SQT
-    ___      &kp Z        &kp X        &kp C       &hml HYPER D &kp V          &kp K       &hmr HYPER H   &kp COMMA   &kp DOT     &kp FSLH     &caps_word
-                                       ___         &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &lt MEDIA BSPC ___
+    ___      &kp Q        &kp W        &kp F       &kp P        &kp B          &kp J       &kp L        &kp U       &kp Y       &kp SEMI     &kp BSLH
+    &kp ESC  &hml LCTRL A &hml LALT R  &hml LCMD S &hml LSHFT T &kp G          &kp M       &hmr RSHFT N &hmr RCMD E &hmr RALT I &hmr RCTRL O &kp SQT
+    ___      &kp Z        &kp X        &kp C       &hml HYPER D &kp V          &kp K       &hmr HYPER H &kp COMMA   &kp DOT     &kp FSLH     &caps_word
+                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    &lt NAV RET  ___
             >;
         };
 
         sym_layer {
             display-name = "sym";
             bindings = <
-    ___      &kp TILDE    &kp CARET    &kp AMPS    &kp PIPE     ___            ___         &kp HASH       ___         &kp DLLR    ___         ___
-    ___      &kp UNDER    &kp LBKT     &kp LBRC    &kp LPAR     ___            ___         &kp RPAR       &kp RBRC    &kp RBKT    &kp STAR    ___
-    ___      &kp PRCNT    &kp AT       &kp PLUS    &kp MINUS    ___            ___         &kp EQUAL      &kp EXCL    ___         &kp GRAVE   ___
-                                       ___         &lt NUM TAB  ___            &lt NAV RET &lt MEDIA BSPC ___
+    ___      &kp TILDE    &kp CARET    &kp AMPS    &kp PIPE     ___            ___         &kp HASH     ___         &kp DLLR    ___         ___
+    ___      &kp UNDER    &kp LBKT     &kp LBRC    &kp LPAR     ___            ___         &kp RPAR     &kp RBRC    &kp RBKT    &kp STAR    ___
+    ___      &kp PRCNT    &kp AT       &kp PLUS    &kp MINUS    ___            ___         &kp EQUAL    &kp EXCL    ___         &kp GRAVE   ___
+                                       ___         &lt NUM TAB  ___            &kp BSPC    &lt NAV RET  ___
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-    ___      ___          ___          ___         ___          ___            &kp PG_UP   &kp HOME       &kp UP      &kp END     ___         ___
-    ___      &kp LCTRL    &kp LALT     &kp LCMD    &kp LSHFT    ___            &kp PG_DN   &kp LEFT       &kp DOWN    &kp RIGHT   ___         ___
-    ___      ___          ___          ___         ___          ___            ___         ___            ___         ___         ___         ___
-                                       ___         &lt NUM TAB  &lt SYM SPACE  ___         &lt MEDIA BSPC ___
+    ___      ___          ___          ___         ___          ___            &kp PG_UP   &kp HOME     &kp UP      &kp END     ___         ___
+    ___      &kp LCTRL    &kp LALT     &kp LCMD    &kp LSHFT    ___            &kp PG_DN   &kp LEFT     &kp DOWN    &kp RIGHT   ___         ___
+    ___      ___          ___          ___         ___          ___            ___         ___          ___         ___         ___         ___
+                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    ___          ___
             >;
         };
 
         num_layer {
             display-name = "num";
             bindings = <
-    ___      &kp F9       &kp F10      &kp F11     &kp F12      ___            ___         &kp N7         &kp N8      &kp N9      ___         ___
-    ___      &kp F5       &kp F6       &kp F7      &kp F8       ___            ___         &kp N4         &kp N5      &kp N6      ___         ___
-    ___      &kp F1       &kp F2       &kp F3      &kp F4       ___            ___         &kp N1         &kp N2      &kp N3      ___         ___
-                                       ___         ___          &lt SYM SPACE  &lt NAV RET &kp N0         ___
+    ___      &kp F9       &kp F10      &kp F11     &kp F12      ___            ___         &kp N7       &kp N8      &kp N9      ___         ___
+    ___      &kp F5       &kp F6       &kp F7      &kp F8       ___            ___         &kp N4       &kp N5      &kp N6      ___         ___
+    ___      &kp F1       &kp F2       &kp F3      &kp F4       ___            ___         &kp N1       &kp N2      &kp N3      ___         ___
+                                       ___         ___          &lt SYM SPACE  &kp BSPC    &kp N0       ___
             >;
         };
 
         media_layer {
             display-name = "media";
             bindings = <
-    ___      ___          &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP ___            ___         ___            ___         ___         ___         ___
-    ___      ___          &kp C_PREV   &kp C_PP    &kp C_NEXT   ___            ___         ___            ___         ___         ___         ___
-    BT_CLEAR ___          BT_SEL_0     BT_SEL_1    BT_SEL_2     ___            ___         ___            ___         ___         ___         ___
-                                       ___         &lt NUM TAB  &lt SYM SPACE  &lt NAV RET ___            ___
+    ___      ___          &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP ___            ___         ___          ___         ___         ___         ___
+    ___      ___          &kp C_PREV   &kp C_PP    &kp C_NEXT   ___            ___         ___          ___         ___         ___         ___
+    BT_CLEAR ___          BT_SEL_0     BT_SEL_1    BT_SEL_2     ___            ___         ___          ___         ___         ___         ___
+                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    &lt NAV RET  ___
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUM NAV>;
+            then-layer = <MEDIA>;
         };
     };
 
