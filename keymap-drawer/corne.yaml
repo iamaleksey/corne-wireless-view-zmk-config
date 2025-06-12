@@ -40,8 +40,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:keyboard-tab$$', h: num}
   - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: nav}
-  - {t: '$$mdi:backspace$$', h: media}
   - {type: none}
   sym:
   - {type: none}
@@ -83,8 +83,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:keyboard-tab$$', h: num}
   - {type: held}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: nav}
-  - {t: '$$mdi:backspace$$', h: media}
   - {type: none}
   nav:
   - {type: none}
@@ -126,8 +126,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:keyboard-tab$$', h: num}
   - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {type: held}
-  - {t: '$$mdi:backspace$$', h: media}
   - {type: none}
   num:
   - {type: none}
@@ -169,7 +169,7 @@ layers:
   - {type: none}
   - {type: held}
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '0'
   - {type: none}
   media:
@@ -210,8 +210,8 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - {t: '$$mdi:keyboard-tab$$', h: num, type: held}
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:keyboard-return$$', h: nav}
-  - {type: held}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: nav, type: held}
   - {type: none}
