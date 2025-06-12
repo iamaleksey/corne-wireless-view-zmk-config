@@ -79,7 +79,7 @@
     ___      ___          &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP ___            ___         ___          ___         ___         ___         ___
     ___      ___          &kp C_PREV   &kp C_PP    &kp C_NEXT   ___            ___         ___          ___         ___         ___         ___
     BT_CLEAR ___          BT_SEL_0     BT_SEL_1    BT_SEL_2     ___            ___         ___          ___         ___         ___         ___
-                                       ___         &lt NUM TAB  &lt SYM SPACE  &kp BSPC    &lt NAV RET  ___
+                                       ___         ___          &lt SYM SPACE  &kp BSPC    ___          ___
             >;
         };
     };
