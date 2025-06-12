@@ -2,8 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define xxx &none
-#define ___ &trans
+#define ___ &none
 
 #define SYM   1
 #define NAV   2
@@ -28,50 +27,50 @@
         base_layer {
             display-name = "base";
             bindings = <
-    xxx     &kp Q       &kp W        &kp F      &kp P        &kp B          &kp J        &kp L         &kp U      &kp Y      &kp SEMI    &kp BSLH
-    &kp ESC &mt LCTRL A &mt LALT R   &mt LCMD S &mt LSHFT T  &kp G          &kp M        &mt RSHFT N   &mt RCMD E &mt RALT I &mt RCTRL O &kp SQT
-    xxx     &kp Z       &kp X        &kp C      &mt HYPER D  &kp V          &kp K        &mt HYPER H   &kp COMMA  &kp DOT    &kp FSLH    &caps_word
-                                     xxx        &lt NUM TAB  &lt SYM SPACE  &lt NAV BSPC &lt MEDIA RET xxx
+    ___      &kp Q       &kp W        &kp F      &kp P        &kp B          &kp J       &kp L          &kp U      &kp Y      &kp SEMI    &kp BSLH
+    &kp ESC  &mt LCTRL A &mt LALT R   &mt LCMD S &mt LSHFT T  &kp G          &kp M       &mt RSHFT N    &mt RCMD E &mt RALT I &mt RCTRL O &kp SQT
+    ___      &kp Z       &kp X        &kp C      &mt HYPER D  &kp V          &kp K       &mt HYPER H    &kp COMMA  &kp DOT    &kp FSLH    &caps_word
+                                      ___        &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &lt MEDIA BSPC ___
             >;
         };
 
         sym_layer {
             display-name = "sym";
             bindings = <
-    xxx     &kp TILDE   &kp CARET    &kp AMPS   &kp PIPE     xxx            xxx          &kp HASH      xxx        &kp DLLR   xxx         xxx
-    xxx     &kp UNDER   &kp LBKT     &kp LBRC   &kp LPAR     xxx            xxx          &kp RPAR      &kp RBRC   &kp RBKT   &kp STAR    xxx
-    xxx     &kp PRCNT   &kp AT       &kp PLUS   &kp MINUS    xxx            xxx          &kp EQUAL     &kp EXCL   xxx        &kp GRAVE   xxx
-                                     xxx        ___          ___            &kp BSPC     ___           xxx
+    ___      &kp TILDE   &kp CARET    &kp AMPS   &kp PIPE     ___            ___         &kp HASH       ___        &kp DLLR   ___         ___
+    ___      &kp UNDER   &kp LBKT     &kp LBRC   &kp LPAR     ___            ___         &kp RPAR       &kp RBRC   &kp RBKT   &kp STAR    ___
+    ___      &kp PRCNT   &kp AT       &kp PLUS   &kp MINUS    ___            ___         &kp EQUAL      &kp EXCL   ___        &kp GRAVE   ___
+                                      ___        &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &lt MEDIA BSPC ___
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-    xxx     ___         ___          ___        ___          ___            &kp PG_UP    &kp HOME      &kp UP     &kp END    ___         xxx
-    xxx     &kp LCTRL   &kp LALT     &kp LCMD   &kp LSHFT    ___            &kp PG_DN    &kp LEFT      &kp DOWN   &kp RIGHT  ___         xxx
-    xxx     ___         ___          ___        ___          ___            ___          ___           ___        ___        ___         xxx
-                                     xxx        ___          ___            ___          ___           xxx
+    ___      ___         ___          ___        ___          ___            &kp PG_UP   &kp HOME       &kp UP     &kp END    ___         ___
+    ___      &kp LCTRL   &kp LALT     &kp LCMD   &kp LSHFT    ___            &kp PG_DN   &kp LEFT       &kp DOWN   &kp RIGHT  ___         ___
+    ___      ___         ___          ___        ___          ___            ___         ___            ___        ___        ___         ___
+                                      ___        &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &lt MEDIA BSPC ___
             >;
         };
 
         num_layer {
             display-name = "num";
             bindings = <
-    xxx     &kp F1      &kp F2       &kp F3     &kp F4       xxx            xxx          &kp N7        &kp N8     &kp N9     xxx         xxx
-    xxx     &kp F5      &kp F6       &kp F7     &kp F8       xxx            xxx          &kp N4        &kp N5     &kp N6     xxx         xxx
-    xxx     &kp F9      &kp F10      &kp F11    &kp F12      xxx            xxx          &kp N1        &kp N2     &kp N3     xxx         xxx
-                                     xxx        ___          ___            &kp BSPC     &kp N0        xxx
+    ___      &kp F1      &kp F2       &kp F3     &kp F4       ___            ___         &kp N7         &kp N8     &kp N9     ___         ___
+    ___      &kp F5      &kp F6       &kp F7     &kp F8       ___            ___         &kp N4         &kp N5     &kp N6     ___         ___
+    ___      &kp F9      &kp F10      &kp F11    &kp F12      ___            ___         &kp N1         &kp N2     &kp N3     ___         ___
+                                      ___        &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &kp N0         ___
             >;
         };
 
         media_layer {
             display-name = "media";
             bindings = <
-    xxx     ___         &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___            ___          ___           ___        ___        ___         xxx
-    xxx     ___         &kp C_PREV   &kp C_PP   &kp C_NEXT   ___            ___          ___           ___        ___        ___         xxx
-    xxx     BT_CLEAR    BT_SEL_0     BT_SEL_1   BT_SEL_2     ___            ___          ___           ___        ___        ___         xxx
-                                     xxx        ___          ___            ___          ___           xxx
+    ___      ___         &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP ___            ___         ___            ___        ___        ___         ___
+    ___      ___         &kp C_PREV   &kp C_PP   &kp C_NEXT   ___            ___         ___            ___        ___        ___         ___
+    BT_CLEAR ___         BT_SEL_0     BT_SEL_1   BT_SEL_2     ___            ___         ___            ___        ___        ___         ___
+                                      ___        &lt NUM TAB  &lt SYM SPACE  &lt NAV RET &lt MEDIA BSPC ___
             >;
         };
     };
