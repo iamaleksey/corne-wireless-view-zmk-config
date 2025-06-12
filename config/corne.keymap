@@ -27,6 +27,7 @@
 
 #define LHS 0 1 2 3 4  5   12 13 14 15 16 17  24 25 26 27 28 29
 #define RHS 6 7 8 9 10 11  18 19 20 21 22 23  30 31 32 33 34 35
+#define THUMBS 36 37 38 39 40 41
 
 / {
     keymap {
@@ -92,9 +93,10 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < RHS >;
+            hold-trigger-key-positions = <RHS THUMBS>;
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -103,7 +105,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < LHS >;
+            hold-trigger-key-positions = <LHS THUMBS>;
             hold-trigger-on-release;
         };
     };
