@@ -1,18 +1,15 @@
 parse_config:
   sticky_label: $$mdi:gesture-tap-hold$$
-  trans_legend:
-    tap: ""
-    type: trans
 
   raw_binding_map:
     "&none":
       tap: ""
       type: none
 
-    "&mt LS(LA(LC(LCMD))) D":
+    "&hml LS(LA(LC(LCMD))) D":
       tap: D
       hold: "✦" # Hyper
-    "&mt LS(LA(LC(LCMD))) H":
+    "&hmr LS(LA(LC(LCMD))) H":
       tap: H
       hold: "✦" # Hyper
 
